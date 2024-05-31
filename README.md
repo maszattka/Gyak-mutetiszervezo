@@ -1,0 +1,4 @@
+Szoftverfejlesztés tárgy Beadandó 
+
+
+Próbaprojekt
