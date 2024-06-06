@@ -14,9 +14,9 @@ public class PatientService {
     @Autowired
     private PatientRepository patientRepository;
 
-    public List<Patient> getAllPatients() {
-        return patientRepository.findAll();
-    }
+ //   public List<Patient> getAllPatients() {
+   //     return patientRepository.findAll();
+   // }
 
     public Patient getPatientByTajNumber(String tajNumber) {
         return patientRepository.findByTajNumber(tajNumber);

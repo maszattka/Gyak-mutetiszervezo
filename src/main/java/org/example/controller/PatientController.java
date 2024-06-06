@@ -29,11 +29,11 @@ public class PatientController {
     @FXML
     public void addPatient() {
         Patient patient = new Patient();
-        patient.setTajNumber(tajNumberField.getText());
+        patient.setTaj(tajNumberField.getText());
         patient.setName(nameField.getText());
         patient.setBirthYear(Integer.parseInt(birthYearField.getText()));
         patient.setSurgeryType(surgeryTypeField.getText());
-        patient.setOperatingDoctor(operatingDoctorField.getText());
+        patient.setSurgeon(operatingDoctorField.getText());
 
         patientService.saveOrUpdatePatient(patient);
     }
@@ -47,7 +47,7 @@ public class PatientController {
             nameField.setText(patient.getName());
             birthYearField.setText(String.valueOf(patient.getBirthYear()));
             surgeryTypeField.setText(patient.getSurgeryType());
-            operatingDoctorField.setText(patient.getOperatingDoctor());
+            operatingDoctorField.setText(patient.getSurgeon());
         }
     }
 
